@@ -21,6 +21,7 @@
 mkdir public
 npm run build && cp -r dist/* public
 cp CNAME public/CNAME
+cp config.dev.json public/config.json
 
 echo "Updating gh-pages branch"
 cd public && git pull && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
