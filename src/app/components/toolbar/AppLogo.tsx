@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IconButton } from "@alethio/ui/lib/control/IconButton";
-import { AlethioIcon } from "@alethio/ui/lib/icon/AlethioIcon";
+import { AlethioIcon } from "app/components/icon/AlethioIcon";
 
 export interface IToolbarLogoProps {
 

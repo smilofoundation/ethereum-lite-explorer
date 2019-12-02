@@ -1,6 +1,6 @@
 {
-    "title": "Ethereum Lite Blockchain Explorer",
-    "description": "Client only, super light weight and entirely open source Ethereum blockchain explorer.",
+    "title": "Smilo Lite Blockchain Explorer",
+    "description": "Client only, super light weight and entirely open source Smilo blockchain explorer.",
 
     "general.error.notFound": "404 - Not Found",
 
@@ -9,7 +9,7 @@
 
     "general.loadingText": "Data is being loaded.<br />Please be patient, it won't be long now ;)",
 
-    "toolbar.alethio.label": "Alethio website",
+    "toolbar.alethio.label": "Smilo Explorer website",
     "toolbar.localization.label": "Select Language",
 
     "cookieBanner.label": "Cookie Policy",

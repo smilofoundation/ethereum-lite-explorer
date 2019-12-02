@@ -88,7 +88,7 @@ export class App extends React.Component<IAppProps> {
                     return null;
                 }
 
-                return <Container zIndex={0}>
+                return <Container zIndex={0} >
                     <ToolbarWrapper>
                         <Toolbar zIndex={1}>
                             <ToolbarItem>
@@ -105,7 +105,7 @@ export class App extends React.Component<IAppProps> {
                                 userPreferences={this.props.userPreferences}
                             />
                             <ToolbarItem title={translation.get("toolbar.alethio.label")} >
-                                <ExternalLink href="https://company.aleth.io" rel="noopener noreferrer">
+                                <ExternalLink href="https://smilo.foundation" rel="noopener noreferrer">
                                     <ToolbarIconButton Icon={BriefcaseIcon} />
                                 </ExternalLink>
                             </ToolbarItem>

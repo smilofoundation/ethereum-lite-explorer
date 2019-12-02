@@ -36,7 +36,7 @@ export class TopMenuLayer extends React.Component<ITomMenuLayerProps> {
                 />
             </MenuItem>
             <MenuItem title={tr.get("toolbar.alethio.label")}>
-                <ExternalLink href="https://company.aleth.io" rel="noopener noreferrer">
+                <ExternalLink href="https://smilo.foundation" rel="noopener noreferrer">
                     <ToolbarIconButton Icon={BriefcaseIcon} />
                 </ExternalLink>
             </MenuItem>

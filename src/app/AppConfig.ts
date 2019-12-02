@@ -84,6 +84,7 @@ export class AppConfig {
     }
 
     getCmsConfig(): IConfigData {
+        // @ts-ignore
         let basePath = (__webpack_public_path__).replace(/\/$/, "");
         return {
             basePath,

@@ -86,14 +86,14 @@ function getConfig(isProduction) {
             title: translation["title"],
             description: translation["description"],
             template: path.join(sourcePublicRoot, "index.html"),
-            baseUrl: process.env.APP_BASE_URL ? process.env.APP_BASE_URL.replace(/\/$/, "") + "/" : "https://lite-explorer.aleth.io/",
+            baseUrl: process.env.APP_BASE_URL ? process.env.APP_BASE_URL.replace(/\/$/, "") + "/" : "https://explorer.smilo.foundation/",
             basePath: basePath ? "/" + basePath + "/" : "/"
         }),
         new InterpolateHtmlPlugin({
             "APP_DEFAULT_LOCALE": defaultLocale
         }),
         new WebappWebpackPlugin({
-            logo: path.join(assetsRoot, "alethio-small.svg"),
+            logo: path.join(assetsRoot, "smilo.svg"),
             title: translation["title"]
         })
     ];
