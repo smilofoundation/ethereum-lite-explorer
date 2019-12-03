@@ -18,9 +18,6 @@
 
             "def": "page://aleth.io/dashboard"
 
-        },
-        "plugin://aleth.io/explorer-core-plugins?v=4.0.0": {
-
         }
     },
 
