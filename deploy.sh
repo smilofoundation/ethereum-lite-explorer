@@ -18,10 +18,10 @@
 #echo "Removing existing files"
 #rm -rf public/*
 #
-mkdir public
+mkdir -p public/config
 npm run build && cp -r dist/* public
 cp CNAME public/CNAME
-cp config.dev.json public/config.json
+cp config.dev.json public/config/config.json
 
 echo "Updating gh-pages branch"
 cd public && git pull && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
