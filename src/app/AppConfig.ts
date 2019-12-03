@@ -86,10 +86,6 @@ export class AppConfig {
     getCmsConfig(): IConfigData {
         // @ts-ignore
         let basePath = (__webpack_public_path__).replace(/\/$/, "");
-        if (window.location.href.indexOf("smilo.foundation") !== -1) {
-            basePath = "https://smilo.foundation";
-            console.log("getCmsConfig, updating basePath", basePath);
-        }
         return {
             basePath,
             pluginsBaseUrl: !this.data.pluginsUrl.match(/^https?:\/\/|\//) ?

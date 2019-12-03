@@ -36,7 +36,7 @@
             ]
         }],
         "no-angle-bracket-type-assertion": true,
-        "no-console": [true, "log", "info", "warn", "error"],
+        "no-console": [false, "log", "info", "warn", "error"],
         "no-empty-interface": false,
         "no-default-export": true,
         "no-floating-promises": true,

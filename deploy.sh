@@ -30,9 +30,10 @@ rm -rf dist/plugins/aleth.io/eth-lite/4.0.0
 cp -r ../explorer-core-plugins/packages/eth-lite/dist dist/plugins/aleth.io/eth-lite/4.0.0
 
 mkdir -p public/config
-npm run build && cp -r dist/* public
+node_modules/.bin/webpack --config=./webpack.config.prod.js && cp -r dist/* public
 cp CNAME public/CNAME
 cp config.prod.json public/config/config.json
+cp 404.html public
 
 echo "Updating gh-pages branch"
 cd public && git pull && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
