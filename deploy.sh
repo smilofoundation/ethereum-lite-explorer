@@ -18,10 +18,21 @@
 #echo "Removing existing files"
 #rm -rf public/*
 #
+acp install \
+    @alethio/explorer-plugin-eth-common@3.0.0 \
+    @alethio/explorer-plugin-eth-lite@4.0.0 \
+    @alethio/explorer-plugin-eth-memento@1.1.0 \
+    @alethio/explorer-plugin-eth-ibft2@2.0.0 \
+    @alethio/explorer-plugin-3box@1.1.0
+
+cd ../explorer-core-plugins && npm run build-js-prod && ../ethereum-lite-explorer
+rm -rf dist/plugins/aleth.io/eth-lite/4.0.0
+cp -r ../explorer-core-plugins/packages/eth-lite/dist dist/plugins/aleth.io/eth-lite/4.0.0
+
 mkdir -p public/config
 npm run build && cp -r dist/* public
 cp CNAME public/CNAME
-cp config.dev.json public/config/config.json
+cp config.prod.json public/config/config.json
 
 echo "Updating gh-pages branch"
 cd public && git pull && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
