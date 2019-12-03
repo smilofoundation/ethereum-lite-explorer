@@ -13,7 +13,7 @@ let app = express();
 
 app.use(morgan("dev"));
 
-app.get(`${basePath}/config/config.json`, (req, res) => {
+app.get(`${basePath}config/config.json`, (req, res) => {
     let configJson = fs.readFileSync("../config.dev.json", "utf8");
     res.setHeader("Content-Type", "application/json");
     res.send(configJson);
